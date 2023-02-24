@@ -22,7 +22,8 @@
 
 h1 {
   font-family: 'IBM PLEX', sans-serif;
-  font-weight: bold italic;
+  font-weight: bold;
+  font-style: italic;
   font-size: 36px;
   margin-bottom: 5px;
   color: #333333;
