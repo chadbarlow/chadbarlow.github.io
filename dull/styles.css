@@ -28,11 +28,7 @@ h3 {
     font-size: 1.2em;
 }
 
-.color1 {
-    color: purple;
-}
-
 ul.border {
     border: 2px solid black;
-    padding: 10px;
+    padding: 10px 10px 10px;
 }
