@@ -1,0 +1,62 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+h1 {
+  font-family: 'IBM PLEX', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+h2 {
+  font-family: 'IBM PLEX', sans-serif;
+  font-weight: regular;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+p {
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: block;
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #0099ff;
+}
+
