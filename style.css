@@ -46,21 +46,38 @@ p {
 
 /* add media queries for smaller screens */
 @media only screen and (max-width: 600px) {
+  .container {
+    max-width: 75%;
+  }
+
   .headshot {
-    width: 150px;
-    height: 150px;
+    width: 75%;
+    height: auto;
+    margin: 10% auto;
+    /* adjust margin proportionally */
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 6vw;
+    /* adjust font size proportionally */
+    margin-bottom: 3vw;
+    /* adjust margin proportionally */
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 4vw;
+    /* adjust font size proportionally */
+    margin-bottom: 5vw;
+    /* adjust margin proportionally */
   }
 
   p {
-    font-size: 14px;
+    font-size: 3.5vw;
+    /* adjust font size proportionally */
+    margin-bottom: 7vw;
+    /* adjust margin proportionally */
+    line-height: 1.3;
+    /* adjust line-height for better legibility */
   }
 
   .social-icons {
@@ -69,8 +86,10 @@ p {
   }
 
   .social-icons a {
-    margin: 10px 0;
-    /* add some vertical margin between icons */
+    margin: 5vw 0;
+    /* adjust margin proportionally */
+    font-size: 8vw;
+    /* adjust font size proportionally */
   }
 }
 
