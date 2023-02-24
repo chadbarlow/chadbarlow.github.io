@@ -1,61 +1,38 @@
-/* style.css */
+/* CSS file */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.headshot {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-  display: block;
+header {
+    text-align: center;
 }
 
 h1 {
-  font-family: 'IBM PLEX', sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 36px;
-  margin-bottom: 5px;
-  color: #333333;
+    color: red;
 }
 
 h2 {
-  font-family: 'IBM PLEX', sans-serif;
-  font-weight: regular;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #333333;
+    color: green;
 }
 
-p {
-  font-family: 'EB Garamond', sans-serif;
-  font-size: 15px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+h3 {
+    color: blue;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
+.shadow {
+    box-shadow: 10px 10px 5px grey;
 }
 
-.social-icons a {
-  display: block;
-  margin: 0 10px;
-  color: #333;
-  font-size: 24px;
+.background-color {
+    background-color: lightgrey;
 }
 
-.social-icons a:hover {
-  color: #0099ff;
+.font-size {
+    font-size: 1.2em;
+}
+
+.color1 {
+    color: purple;
+}
+
+ul.border {
+    border: 2px solid black;
+    padding: 10px;
 }
