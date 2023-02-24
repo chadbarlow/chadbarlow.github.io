@@ -1,7 +1,5 @@
 /* style.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Aqua+Grotesque&family=Roboto+Slab:wght@100&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,13 +21,13 @@
 }
 
 h1 {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'IBM PLEX', sans-serif;
   font-size: 36px;
   margin-bottom: 5px;
 }
 
 h2 {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'EB Garamond', sans-serif;
   font-size: 24px;
   margin-bottom: 10px;
 }
