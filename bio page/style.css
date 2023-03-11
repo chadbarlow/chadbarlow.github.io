@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: 'IBM PLEX', sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-weight: regular;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* add media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 75%;
+  }
+
+  .headshot {
+    width: 75%;
+    height: auto;
+    margin: 10% auto;
+    /* adjust margin proportionally */
+  }
+
+  h1 {
+    font-size: 12vw;
+    /* adjust font size proportionally */
+    margin-bottom: 5vw;
+    /* adjust margin proportionally */
+  }
+
+  h2 {
+    font-size: 8vw;
+    /* adjust font size proportionally */
+    margin-bottom: 6vw;
+    /* adjust margin proportionally */
+  }
+
+  p {
+    font-size: 4.5vw;
+    /* adjust font size proportionally */
+    margin-bottom: 10vw;
+    /* adjust margin proportionally */
+    line-height: 1.4;
+    /* adjust line-height for better legibility */
+  }
+
+  /* .social-icons {
+    flex-direction: column;
+  } */
+
+  .social-icons a {
+    margin: 5vw 0;
+    /* adjust margin proportionally */
+    font-size: 12vw;
+    /* adjust font size proportionally */
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: block;
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #0099ff;
+}
