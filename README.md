@@ -1,2 +1,1 @@
-# chadbarlow.github.io
-bio page
+personal bio page
