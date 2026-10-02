@@ -1,37 +1,86 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta property="og:title" content="logo" />
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/chadbarlow/chadbarlow.github.io/main/images/favicon.png" />
-  <title>chad barlow</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+PLEX">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chad Barlow · Operations and Systems</title>
+<meta name="description" content="Chad Barlow: operations and systems, Madison, Georgia. Data projects, live demos and talks.">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.slate.min.css">
+<style>
+main.container{max-width:960px;padding:2.5rem 16px 3rem}
+.hero{display:flex;gap:1.5rem;align-items:center;margin-bottom:2rem}
+.hero img{width:112px;height:112px;border-radius:50%;object-fit:cover;flex:none}
+.hero h1{margin:0}.hero p{margin:.2rem 0;color:var(--pico-muted-color)}
+.links a{margin-right:1rem}
+@media (max-width:560px){.hero{flex-direction:column;align-items:flex-start}}
+h2{margin-top:2.2rem;font-size:1.3rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
+.cards article{margin:0;display:flex;flex-direction:column}
+.cards h3{font-size:1.05rem;margin-bottom:.35rem}
+.cards p{font-size:.92rem;flex:1}
+.tags{font-size:.78rem;color:var(--pico-muted-color);margin-bottom:.7rem}
+.cards footer{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap}
+.cards footer a[role=button]{padding:.3rem .8rem;font-size:.85rem}
+.about{font-size:1.05rem}
+.creds{color:var(--pico-muted-color);font-size:.92rem}
+</style>
 </head>
-
-<body>
-  <div class="container">
-    <img src="/images/headshot.jpg" alt="My Headshot" class="headshot">
-    <h1>CHAD BARLOW</h1>
-    <h2>CARPENTER</h2>
-    <p>Chad Barlow is a carpenter in Madison, GA. In a past life, Chad was Communications Director at Christ Church
-      Nashville (TN, USA), College Pastor at The Falls Church Anglican (Washington, DC), and co-founder of an
-      educational nonprofit for teaching religious studies to students around the country.</p>
-    <p>Chad studied business marketing at Parsons
-        School of Design <span class="nowrap">and applied theology at the University of Oxford.</span></p>
-    <div class="social-icons">
-      <a href="https://github.com/chadbarlow"><i class="fab fa-github"></i></a>
-      <a href="mailto:chadbarlow@outlook.com"><i class="far fa-envelope"></i></a>
-      <a href="https://twitter.com/chadbarlow"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/barlowchad"><i class="fab fa-linkedin"></i></a>
-    </div>
+<body><main class="container">
+<header class="hero">
+  <img src="images/headshot.jpg" alt="Chad Barlow">
+  <div>
+    <h1>Chad Barlow</h1>
+    <p>Operations and systems · Madison, Georgia</p>
+    <p class="links"><a href="https://www.linkedin.com/in/barlowchad" rel="noopener">LinkedIn</a><a href="https://github.com/chadbarlow" rel="noopener">GitHub</a></p>
   </div>
-</body>
+</header>
 
-</html>
+<section>
+  <p class="about">I build the systems that let small teams run like large ones. Today I run operations for a custom home builder in Madison, Georgia, after starting on the construction crew. Before that I directed communications at Christ Church Nashville, where I built process-automation software that produced ten times the industry-benchmark output at about a tenth of the cost.</p>
+  <p class="creds">MS, Strategic Design and Management, Parsons · Data Science and Analytics, Georgia Tech · BA, Davidson College, Phi Beta Kappa</p>
+</section>
+
+<h2>Live projects</h2>
+<div class="cards">
+  <article><h3>Live earthquake map</h3><div class="tags">JavaScript · Leaflet · D3 · USGS live feed</div>
+    <p>Every earthquake from the past 30 days, from the live USGS feed. Markers are sized by magnitude and colored by depth, with popups and a legend.</p>
+    <footer><a role="button" href="https://interactive-map-plot.github.io/live/">Open demo</a><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-15_interactive-map-plot">Code</a></footer></article>
+  <article><h3>Microbe explorer dashboard</h3><div class="tags">JavaScript · D3 · Plotly · Bootstrap</div>
+    <p>Pick a test subject and see their most common microbes in a bar chart, a bubble chart and a demographics panel.</p>
+    <footer><a role="button" href="https://belly-button-challenge.github.io/live/">Open demo</a><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-14_interactive-web-dashboard">Code</a></footer></article>
+  <article><h3>Weather vs. latitude</h3><div class="tags">HTML · CSS · Bootstrap · Python charts</div>
+    <p>A responsive multi-page site showing how latitude shapes temperature, humidity, cloud cover and wind across 500+ cities.</p>
+    <footer><a role="button" href="https://web-design-challenge.github.io/live/">Open demo</a><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-bootcamp_challenge-11_responsive-web-design">Code</a></footer></article>
+</div>
+
+<h2>Data and machine learning</h2>
+<div class="cards">
+  <article><h3>Streaming-services dashboard</h3><div class="tags">Team of 4 · lead committer · Flask · MongoDB · JavaScript</div>
+    <p>Compares the movie catalogs of Netflix, Hulu, Disney+ and Prime Video by genre, year and ratings. I built the sunburst and ratings charts and the visual design.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_project-03_streaming-services-dashboard">Code</a></footer></article>
+  <article><h3>Credit-risk model</h3><div class="tags">Python · scikit-learn · logistic regression</div>
+    <p>Predicts high-risk loans. Rebalancing the training data raised high-risk recall from 0.91 to 0.99.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-20_supervised-ml">Code</a></footer></article>
+  <article><h3>Nonprofit success predictor</h3><div class="tags">Python · TensorFlow · Keras</div>
+    <p>A neural network that predicts which of 34,000+ nonprofit funding applicants will succeed, tuned toward 75% accuracy.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-21_deep-learning-neural-networks">Code</a></footer></article>
+  <article><h3>Crypto market clusters</h3><div class="tags">Python · K-means · PCA</div>
+    <p>Groups cryptocurrencies by price behavior, before and after reducing the data to two principal components.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-19_unsupervised-ml">Code</a></footer></article>
+  <article><h3>Mars news scraper</h3><div class="tags">Python · BeautifulSoup · Splinter · MongoDB · Flask</div>
+    <p>Scrapes news and data from several sites, stores it in MongoDB and serves it on a web page.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-12_web-scraping-and-mongodb">Code</a></footer></article>
+  <article><h3>Crowdfunding data pipeline</h3><div class="tags">Python · pandas · regex · PostgreSQL</div>
+    <p>Extracts and cleans messy campaign data, designs the database schema and loads it into PostgreSQL.</p>
+    <footer><a role="button" class="outline secondary" href="https://github.com/chadbarlow/gt-data-bootcamp_challenge-13_etl-pipeline">Code</a></footer></article>
+</div>
+
+<h2>Talks</h2>
+<div class="cards">
+  <article><h3>Designing "anti-lonely" social tools</h3><div class="tags">Keynote · Faith Leads Tech · 2018</div>
+    <p>We are more connected and more isolated than ever. It doesn't have to be this way: our social tools can be redesigned to bring people together.</p>
+    <footer><a role="button" class="outline secondary" href="https://www.youtube.com/watch?v=s0Ctsk_FCbk">Watch</a></footer></article>
+</div>
+
+<footer style="margin-top:3rem"><small>© 2026 Chad Barlow</small></footer>
+</main></body></html>
